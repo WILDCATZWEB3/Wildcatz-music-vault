@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wildcatz Music Vault</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Wildcatz Music Vault</h1>
+
+    <!-- Auth Section -->
+    <div id="authSection">
+      <div id="signUpForm" class="auth-form">
+        <h2>Sign Up</h2>
+        <input type="text" id="signupUsername" placeholder="Username" />
+        <input type="password" id="signupPassword" placeholder="Password" />
+        <button onclick="signUp()">Create Account</button>
+      </div>
+
+      <div id="signInForm" class="auth-form">
+        <h2>Sign In</h2>
+        <input type="text" id="signinUsername" placeholder="Username" />
+        <input type="password" id="signinPassword" placeholder="Password" />
+        <button onclick="signIn()">Log In</button>
+      </div>
+    </div>
+
+    <!-- App Section -->
+    <div id="appSection" style="display:none;">
+      <h2 id="welcomeUser"></h2>
+      <button onclick="signOut()">Sign Out</button>
+
+      <!-- Upload Song -->
+      <h3>Upload Your Song</h3>
+      <input type="text" id="songTitle" placeholder="Song title" />
+      <input type="url" id="songLink" placeholder="Audiomack / Spotify URL" />
+      <button onclick="uploadSong()">Upload</button>
+
+      <!-- Search -->
+      <input type="text" id="searchBox" placeholder="Search songs..." oninput="searchSongs()" />
+
+      <!-- All Songs -->
+      <div id="songList"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
