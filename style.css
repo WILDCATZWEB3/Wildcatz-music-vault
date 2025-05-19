@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: #222;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #00ff88;
+  font-weight: bold;
+}
+
+.song-card {
+  background: #333;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.song-card a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.auth-form {
+  margin-bottom: 30px;
+}
